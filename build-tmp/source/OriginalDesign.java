@@ -21,7 +21,7 @@ int green = 127;
 public void setup() {
   size(800, 400, P3D);
   background(0);
-  camera(0,0,200,0,0,0, 0.0f, 1.0f, 0.0f);
+  // camera(0,0,200,0,0,0, 0.0, 1.0, 0.0);
   noStroke();
 }
 
@@ -30,7 +30,8 @@ public void draw() {
   red += random(-5,6);
   blue += random(-5,6);
   green += random(-5,6);
-  pointLight(red,green,blue,0,0,0);
+  pointLight(red,green,blue,400,200,150);
+  translate(400,200,150);
   pushMatrix();
   translate(-60, 0, 0);
   sphere(30);
