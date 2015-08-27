@@ -30,7 +30,6 @@ void drawEllipse1() {
 	e1y += 1;
 	if(e1x < 200) {
 		e1x += 2;
-		System.out.println(e1x);
 	}
 }
 
